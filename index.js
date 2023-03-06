@@ -15,3 +15,5 @@ console.log('Testing failed commit messages in readme 1');
 
 
 console.log('This is another feature message');
+
+console.log("This commit message should not be part of commit");
