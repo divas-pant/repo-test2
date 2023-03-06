@@ -16,7 +16,9 @@ module.exports = {
         "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
       }
     }],
-    "@semantic-release/release-notes-generator",
+    ["@semantic-release/release-notes-generator", {
+      "preset": "conventionalcommits"
+    }],
     "@semantic-release/npm"
   ]
 }
