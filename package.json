@@ -1,4 +1,3 @@
-
 {
   "name": "@test/prototype-autorelease",
   "version": "0.0.0",
@@ -15,31 +14,14 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
+    "@commitlint/config-conventional": "^17.4.4",
     "semantic-release": "^20.1.1"
   },
   "publishConfig": {
     "access": "restricted"
   },
   "devDependencies": {
+    "@semantic-release/commit-analyzer": "^9.0.2",
     "semantic-release": "^20.1.1"
-  },
-  "release": {
-    "branches": [
-        "master"
-    ]
-  },
-  "plugins": [
-    ["@semantic-release/commit-analyzer", {
-      "preset": "conventionalcommits",
-      "releaseRules": [
-        {"type": "docs", "scope":"README", "release": "patch"},
-        {"type": "refactor", "release": "patch"},
-        {"type": "style", "release": "patch"}
-      ],
-      "parserOpts": {
-        "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
-      }
-    }],
-    "@semantic-release/release-notes-generator"
-  ]
+  }
 }
