@@ -17,7 +17,13 @@ module.exports = {
       }
     }],
     ["@semantic-release/release-notes-generator", {
-      "preset": "conventionalcommits"
+      "preset": "conventionalcommits",
+      "parserOpts": {
+        "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
+      },
+      "writerOpts": {
+        "commitsSort": ["subject", "scope"]
+      }
     }],
     "@semantic-release/npm"
   ]
