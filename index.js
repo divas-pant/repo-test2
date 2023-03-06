@@ -12,3 +12,4 @@ console.log("This marks first feature change for branch");
 console.log("This is the second feature of the branch");
 
 console.log("Testing failed commit messages in readme 1");
+console.log("Failed commit message in readme 2");
