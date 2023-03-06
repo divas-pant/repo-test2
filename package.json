@@ -1,0 +1,45 @@
+
+{
+  "name": "@test/prototype-autorelease",
+  "version": "0.0.0",
+  "description": "prototype-autorelease",
+  "author": "Divas",
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "build": "npx cmbundler build",
+    "test": "npx cmbundler test",
+    "test:watch": "npx cmbundler test --watch",
+    "test:coverage": "npx cmbundler test --coverage",
+    "start": "node index.js",
+    "semantic-release": "semantic-release"
+  },
+  "dependencies": {
+    "semantic-release": "^20.1.1"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "devDependencies": {
+    "semantic-release": "^20.1.1"
+  },
+  "release": {
+    "branches": [
+        "master"
+    ]
+  },
+  "plugins": [
+    ["@semantic-release/commit-analyzer", {
+      "preset": "conventionalcommits",
+      "releaseRules": [
+        {"type": "docs", "scope":"README", "release": "patch"},
+        {"type": "refactor", "release": "patch"},
+        {"type": "style", "release": "patch"}
+      ],
+      "parserOpts": {
+        "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
+      }
+    }],
+    "@semantic-release/release-notes-generator"
+  ]
+}
