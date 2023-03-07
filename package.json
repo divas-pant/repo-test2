@@ -1,6 +1,6 @@
 {
   "name": "@test/prototype-autorelease",
-  "version": "3.7.0",
+  "version": "3.7.1",
   "description": "prototype-autorelease",
   "author": "Divas",
   "license": "UNLICENSED",
@@ -16,6 +16,7 @@
   "dependencies": {
     "@commitlint/cli": "17.4.4",
     "@commitlint/config-conventional": "17.4.4",
+    "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/npm": "9.0.2",
     "@semantic-release/release-notes-generator": "10.0.3",
