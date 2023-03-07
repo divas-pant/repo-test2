@@ -25,6 +25,9 @@ module.exports = {
         "commitsSort": ["subject", "scope"]
       }
     }],
+    ["@semantic-release/exec", {
+      "publishCmd": "echo This is a test command "
+    }],
     "@semantic-release/npm",
     "@semantic-release/git"
   ]
