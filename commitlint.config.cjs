@@ -3,7 +3,7 @@ const RULES = {
     "rules": {
         "body-full-stop": [1, "always", "."], // ensure body ends with a full stop, warn if not
         "body-max-line-length": [0, "always"], // ensures body can be of any length
-        "body-case": [2, "always", "lower-case"], // ensure body is written in lower case, error if not
+        "body-case": [1, "always", "lower-case"], // ensure body is written in lower case, error if not
         "scope-case": [2, "always", "lower-case"], // ensures the scope is in lower case, error if not
         "subject-case": [2, "always", "lower-case"], // ensures subject is written in lower case, error if not
         "type-case": [2, "always", "lower-case"], // ensures type of the commit is in lower case, error if not
