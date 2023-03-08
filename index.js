@@ -18,3 +18,4 @@ console.log('This is another feature message');
 
 console.log("This commit message should not be part of commit");
 
+process.exit(1)
