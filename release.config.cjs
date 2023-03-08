@@ -41,6 +41,8 @@ module.exports = {
     }],
     "@semantic-release/npm",
     "@semantic-release/git",
-    "@semantic-release/github"
+    ["@semantic-release/github", {
+      "assets": ["package.json"]
+    }]
   ]
 }
