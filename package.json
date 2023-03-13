@@ -6,10 +6,6 @@
   "license": "UNLICENSED",
   "type": "module",
   "scripts": {
-    "build": "npx cmbundler build",
-    "test": "npx cmbundler test",
-    "test:watch": "npx cmbundler test --watch",
-    "test:coverage": "npx cmbundler test --coverage",
     "start": "node index.js",
     "semantic-release": "semantic-release"
   },
