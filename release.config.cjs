@@ -43,7 +43,12 @@ module.exports = {
         }
       ],
       '@semantic-release/npm', // Plugin to publish package on npm registry
-      '@semantic-release/git', // Plugin to publish package on git as a new tag
+      [
+        '@semantic-release/git',
+        {
+            "assets": ["docs/CHANGELOG.md"]
+        }
+        ],
       [
           '@semantic-release/github', { // Plugin to publish package on github as new release
               assets: ['package.json'], // Define any assets that needs to be published in github, for eg. the build folder
