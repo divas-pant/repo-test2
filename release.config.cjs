@@ -36,6 +36,12 @@ module.exports = {
               },
           },
       ],
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "docs/CHANGELOG.md"
+        }
+      ],
       '@semantic-release/npm', // Plugin to publish package on npm registry
       '@semantic-release/git', // Plugin to publish package on git as a new tag
       [
