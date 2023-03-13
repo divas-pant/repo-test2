@@ -1,5 +1,5 @@
 module.exports = {
-  ci: false, // Setting this to false allows program to make release from local repository
+  ci: true, // Setting this to false allows program to make release from local repository
   dryRun: false, // Allows to make releases when running in local env, otherwise program prints out new version number
   release: {
       branches: ['master'], // Default branch from where the release was made
