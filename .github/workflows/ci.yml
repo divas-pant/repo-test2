@@ -1,4 +1,4 @@
-name: Node.js Test and Release CI
+name: Node.js Release CI
 
 on:
   push:
@@ -7,27 +7,24 @@ on:
 
 jobs:
   build:
-    permissions: write-all # Elevate permissions for the stage to tag and push commits )Not working for protected tags_
-
+    #  elevate permissions to allow commit and set up environment
+    permissions: write-all
     runs-on: ubuntu-latest
 
-    environment: production # Get environment containing vars and secrets
+    # Get environment containing vars and secrets defined in repo setting
+    environment: production
 
-    strategy:
-      matrix:
-        node-version: [18.x]
-
+    # Define steps
     steps:
-
     #  Checkout code
     - name: Checkout
       uses: actions/checkout@v3
 
     # Setup node js envrionment
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js 18.x
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 18.x
         cache: 'npm'
 
     #  Install dependencies
