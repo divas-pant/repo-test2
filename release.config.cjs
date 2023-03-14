@@ -42,7 +42,7 @@ module.exports = {
           "changelogFile": "docs/CHANGELOG.md"
         }
       ],
-      '@semantic-release/npm', // Plugin to publish package on npm registry
+    //   '@semantic-release/npm', // Plugin to publish package on npm registry
       [
         '@semantic-release/git',
         {
