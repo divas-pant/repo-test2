@@ -19,4 +19,3 @@ console.log('This is another feature message');
 console.log("This commit message should not be part of commit");
 
 
-console.log("Commit lint tests-2")
